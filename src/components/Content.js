@@ -5,7 +5,7 @@ import logo from './logo2.png';
 function Content({ chatId }) {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
-  const [currentModel, setCurrentModel] = useState('model1');
+  const [currentModel, setCurrentModel] = useState('GPT-4o');
   const [isSingleMessageMode, setIsSingleMessageMode] = useState(false);
   const messagesEndRef = useRef(null);
   const textareaRef = useRef(null);
@@ -112,9 +112,9 @@ function Content({ chatId }) {
     <div className={`content ${isSingleMessageMode ? 'single-message-mode' : ''}`}>
       <header className="header">
         <select value={currentModel} onChange={handleModelChange} className="model-select">
-          <option value="model1">Model 1</option>
-          <option value="model2">Model 2</option>
-          <option value="model3">Model 3</option>
+          <option value="model1">GPT-4o</option>
+          <option value="model2">None</option>
+          <option value="model3">None</option>
         </select>
         <span className="current-model">Current Model: {currentModel}</span>
         <button className="single-message-button" onClick={toggleSingleMessageMode}>
