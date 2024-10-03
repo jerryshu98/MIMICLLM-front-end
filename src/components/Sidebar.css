@@ -1,0 +1,150 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #232222; /* Set consistent background color */
+  height: 90vh; /* Extend to full viewport height */
+}
+
+.toggle-sidebar-btn {
+  padding: 10px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.toggle-sidebar-btn:hover {
+  background-color: #666;
+}
+
+.sidebar {
+  width: 300px; /* Increased width for the sidebar */
+  background-color: #232222;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  transition: all 0.3s; /* Smooth transition for show/hide */
+  height: 100%; /* Take full height of the container */
+}
+
+.sidebar.hidden {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-header input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #444;
+  color: white;
+}
+
+.sidebar-header button {
+  padding: 10px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar-header button:hover {
+  background-color: #666;
+}
+
+.sidebar-list {
+  flex: 1;
+  overflow-y: auto; /* Make the list scrollable */
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.sidebar-item.selected {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.sidebar-item span {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  margin-right: 10px;
+}
+
+.sidebar-item input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  margin-right: 10px;
+}
+
+.sidebar-item button {
+  padding: 10px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.sidebar-item button:hover {
+  background-color: #666;
+}
+
+/* Optional: Custom scroll bar styling */
+.sidebar-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar-list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.sidebar-list::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* 减少间距 */
+}
+
+.search-bar {
+  margin-bottom: 15px; /* 适当调整这个值以达到期望的视觉效果 */
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+}

@@ -1,0 +1,23 @@
+.App {
+  display: flex;
+  height: 100vh;
+  background-color: #232222;
+  color: #fff;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  padding: 20px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.sidebar-item, .content-block {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #555;
+}
